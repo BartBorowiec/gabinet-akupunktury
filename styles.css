@@ -1,18 +1,14 @@
 #map {
-        width: 400px;
-        height: 400px;
-        background-color: grey;
-        margin: 20px;
-      }
+  max-width: 100%;
+  height: 300px;
+  background-color: grey;
+  margin: 20px;
+}
+
 #map img {
 	max-width: none;
 	max-height: none;
 }
- html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
 
 body {
 	height: 100%;
@@ -27,22 +23,28 @@ h2 {
 }
 
 p {
-	margin-left: 40px;
+	margin: 15px 15px 15px 20px; 
 	word-wrap: break-word;
+  margin-bottom: 15px;
 }
 i {
 	margin-right: 20px;
 }
-hr {
-	margin-right: 17em;
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #c83036, white, #c83036);
+  background-image: -moz-linear-gradient(left, #c83036, white, #c83036);
+  background-image: -ms-linear-gradient(left, #c83036, white, #c83036);
+  background-image: -o-linear-gradient(left, #c83036, white, #c83036); 
 }
+
 .container {
-	background-color: #9F262B;
+	background-color: #c83036;
 	color: white;
   width: 60%;
-	margin-bottom: 20px;
-  margin-left: auto;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	margin: 20px auto;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
 	box-shadow:  0px 6px 10px rgba(0,0,0,0.4),
@@ -52,9 +54,12 @@ hr {
 }
 
 .navbar {
-	background-color: #9F262B;
-	padding: 0 20% 0 20%;
+	background-color: #c83036;
 	border: none;
+  border-radius: 0;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
@@ -63,6 +68,11 @@ hr {
 				 0px 18px 23px rgba(0,0,0,0.1);*/
 }
 
+.navbar-default .navbar-brand img {
+  max-height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
 .navbar-default .navbar-brand {
 	color: white;
 }
@@ -77,17 +87,10 @@ hr {
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	color: #D7DBDC;
 }
-.col-md-4 {
-	padding: 0;
-}
-.image img {
-	max-width:100%;
-	padding: none
-}
 
-.portrait {
-	max-height: 400px;
-	float: right;
+.image{
+  vertical-align: middle;
+  padding: 0;
 }
 
 .navbar-right {
@@ -105,6 +108,10 @@ a:hover {
 	text-decoration: none;
 }
 
+.slideshow {
+  margin: auto;
+  width: 80%;
+}
 #slider {
     opacity:1;
     transition: opacity 1s; 
@@ -121,7 +128,7 @@ a:hover {
 }
 
 #adres {
-	padding-top:6em;
+	padding-top:3em;
 }
 /*.thumbnail {
 	box-shadow:  0px 6px 10px rgba(0,0,0,0.4),
@@ -150,13 +157,12 @@ a:hover {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: #D7DBDC;
 }
 
 /* Modal Content */
@@ -165,17 +171,17 @@ a:hover {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 70%;
   max-width: 1200px;
 }
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   position: absolute;
-  top: 100px;
-  right: 300px;
-  font-size: 35px;
+  top: 0;
+  right: 0;
+  font-size: 50px;
   font-weight: bold;
 }
 
@@ -227,28 +233,4 @@ a:hover {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
